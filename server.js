@@ -46,8 +46,7 @@ app.get('/', (req, res) => {
   // });
   res.render('home.hbs',{
     pagetTitle:' Home Page PRD',
-
-    bodyText: 'Welcome welcome welcome'
+    bodyText: 'Welcome'
   });
 
 });
@@ -55,6 +54,13 @@ app.get('/', (req, res) => {
     // res.send('About Page');
     res.render('about.hbs',{
       pagetTitle:' About PRD',
+
+    });
+  });
+  app.get('/projects', (req,res) => {
+    // res.send('About Page');
+    res.render('projects.hbs',{
+      pagetTitle:' Projects PRD',
 
     });
   });
